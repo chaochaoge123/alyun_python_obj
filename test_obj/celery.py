@@ -14,7 +14,7 @@ project_settings = '%s.settings' % project_name
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', project_settings)
 
 # 实例化Celery
-app = Celery('tasks', broker='redis://:qqcqqc@172.29.32.104:6379/3')
+app = Celery('tasks', broker='redis://:qqcqqc@47.102.138.171:6379/3')
 
 # 使用django的settings文件配置celery
 app.config_from_object('django.conf:settings')

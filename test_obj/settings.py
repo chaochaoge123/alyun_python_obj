@@ -83,10 +83,10 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '172.29.32.100',
+        'HOST': '47.102.138.171',
         'PORT': 3306,
         'USER': 'root',
-        "PASSWORD": 'root',
+        "PASSWORD": '',
         'NAME': 'test'
     }
 
@@ -96,7 +96,7 @@ DATABASES = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://172.29.32.104:6379/0",
+        "LOCATION": "redis://47.102.138.171:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "CONNECTION_POOL_KWARGS": {"max_connections": 100},
@@ -148,9 +148,9 @@ STATICFILES_DIRS = [
 ]
 
 # celery
-BROKER_URL = 'redis://:qqcqqc@172.29.32.104:6379/3'
+BROKER_URL = 'redis://:qqcqqc@47.102.138.171:6379/3'
 # celery结果返回，可用于跟踪结果
-CELERY_RESULT_BACKEND = 'redis://:qqcqqc@172.29.32.104:6379/4'
+CELERY_RESULT_BACKEND = 'redis://:qqcqqc@47.102.138.171:6379/4'
 
 # celery内容等消息的格式设置
 CELERY_ACCEPT_CONTENT = ['application/json', ]
