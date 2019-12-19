@@ -108,5 +108,6 @@ venv.bak/
 .idea
 ../.idea/
 *.pyc
+venv_py3/
 
 # 过滤
